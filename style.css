@@ -1,0 +1,199 @@
+/* Root variables for light and dark mode */
+:root {
+  --primary-bg-color: #fafafa;
+  --primary-text-color: #333;
+  --secondary-bg-color: #f0f0f0;
+  --link-color: #333;
+  --border-color: #ddd;
+  --badge-border-color: #333;
+  --signature-color: #0073e6;
+  --button-bg-color: transparent;
+  --button-text-color: #333;
+  --button-border-color: #333;
+  --button-hover-bg-color: #f0f0f0;
+}
+
+body.dark-mode {
+  --primary-bg-color: #121212;
+  --primary-text-color: #e0e0e0;
+  --secondary-bg-color: #1e1e1e;
+  --link-color: #f2542d;
+  --border-color: #444;
+  --badge-border-color: #8f6d6d;
+  --signature-color: #77bbff;
+  --button-bg-color: #bc4326;
+  --button-text-color: white;
+  --button-border-color: #bc4326;
+  --button-hover-bg-color: #a7361e;
+}
+
+/* General body styling */
+body {
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+header,
+footer,
+.section,
+.card,
+.badge {
+  background-color: inherit;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header,
+footer {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px dashed var(--border-color);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.card h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+img {
+  text-align: left;
+  border-radius: 4px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.2em 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer a {
+  margin: 0 10px;
+}
+
+.signature {
+  font-family: "Oooh Baby", cursive;
+  color: var(--signature-color);
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 20px 0;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--badge-border-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.badge .iconify {
+  margin-right: 5px;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.iconify.sun {
+  color: #888;
+}
+
+.iconify.moon {
+  color: #0073e6;
+}
+
+body.dark-mode .iconify.sun {
+  color: #ffeb3b;
+}
+
+body.dark-mode .iconify.moon {
+  color: #888;
+}
+
+.resume-button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  padding: 5px 10px;
+  border: 1px solid var(--button-border-color);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 0.9em;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: var(--button-hover-bg-color);
+}

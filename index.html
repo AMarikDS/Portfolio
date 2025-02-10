@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata defining character encoding and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Surname</title>
+
+    <!-- Favicon and canonical link -->
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="canonical" href="https://yourwebsite.com" />
+
+    <!-- Standard META tags for SEO optimization -->
+    <meta
+      name="description"
+      content="Portfolio of Name Surname: projects, experience & tech stack"
+    />
+    <meta name="keywords" content="portfolio, personal page, resume" />
+    <meta name="author" content="MxPanf" />
+
+    <!-- Open Graph META tags for social media sharing -->
+    <meta property="og:title" content="Name Surname Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore my projects, work experience, and technical skills."
+    />
+    <meta property="og:image" content="assets/og-image.jpg" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Portfolio" />
+
+    <!-- Twitter Card META tags for Twitter integration -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Name Surname Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Explore my projects, work experience, and technical skills."
+    />
+    <meta name="twitter:image" content="assets/og-image.jpg" />
+
+    <!-- Google Fonts and custom CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Oooh+Baby&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- Profile header with avatar and introduction -->
+        <img src="assets/avatar.webp" alt="Avatar" style="width: 50px" />
+        <h1>Name Surname</h1>
+        <p>
+          @super_user
+          <button class="resume-button" onclick="openResume()">
+            Open Resumé
+            <!-- EDIT RESUME LINK IN SCRIPT.JS -->
+          </button>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis
+          rhoncus lacus. Quisque placerat imperdiet suscipit. Ut aliquam ex
+          finibus dolor malesuada, et pellentesque lorem convallis. Fusce
+          maximus tempor suscipit.
+        </p>
+      </header>
+
+      <section class="section">
+        <!-- Key projects section -->
+        <h2>Featured Projects</h2>
+        <div class="card">
+          <h3>
+            <img src="assets/projects/project-1.svg" alt="First Project" /><a
+              href="#"
+              target="_blank"
+              >First Project</a
+            >
+          </h3>
+          <p>
+            In fermentum pharetra dignissim. Proin et neque rutrum, porttitor
+            est ut, facilisis velit. Suspendisse sollicitudin at erat a
+            tincidunt. Curabitur sit amet tellus et nisi interdum euismod nec in
+            lorem.
+          </p>
+          <p>
+            Pellentesque justo risus, iaculis sit amet porttitor vitae, suscipit
+            vel dui. Mauris auctor eros ac mauris cursus imperdiet.
+          </p>
+        </div>
+        <div class="card">
+          <h3>
+            <img src="assets/projects/project-2.svg" alt="Second Project" /><a
+              href="#"
+              target="_blank"
+              >Second Project</a
+            >
+          </h3>
+          <p>
+            Aliquam imperdiet eget nisl eget fermentum. Nullam euismod porttitor
+            lectus ac lacinia. Mauris sodales urna quis metus luctus, quis
+            ullamcorper sapien consequat.
+          </p>
+          <p>
+            In sed odio eget erat lobortis convallis ut ut neque. Sed egestas
+            massa a efficitur rutrum. Sed at viverra ligula.
+          </p>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="section">
+        <!-- Work experience section -->
+        <h2>Work Experience</h2>
+        <div class="card">
+          <h3>
+            <img src="assets/companies/company-1.svg" alt="Company ABC" /><a
+              href="#"
+              >Company ABC</a
+            >
+          </h3>
+          <p>
+            Integer sed felis venenatis ligula varius ornare. In lobortis massa
+            laoreet, dictum tellus at, ullamcorper dui.
+          </p>
+        </div>
+        <div class="card">
+          <h3>
+            <img src="assets/companies/company-2.svg" alt="Company XYZ" /><a
+              href="#"
+              >Company XYZ</a
+            >
+          </h3>
+          <p>
+            Maecenas faucibus semper velit vitae blandit. In nunc tellus,
+            lacinia ac purus vel, tempus consectetur metus.
+          </p>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="section">
+        <!-- Technology stack section -->
+        <h2>Technologies I Work With</h2>
+        <!-- Dynamic badges are rendered using JavaScript -->
+        <section class="badges" id="badges"></section>
+      </section>
+
+      <hr />
+
+      <section class="section">
+        <!-- About me section -->
+        <h2>About me</h2>
+        <p>
+          Sed quis consectetur sem. Quisque fringilla erat lacinia quam mollis,
+          et interdum ante rutrum. Integer vitae lectus lacus. Etiam rutrum orci
+          mi, a egestas velit commodo eu. In et elit arcu. Mauris at accumsan
+          tellus. In laoreet id metus eget fringilla.
+        </p>
+        <p>
+          Aliquam eu lorem condimentum, vehicula magna nec, elementum massa.
+          Cras lacinia faucibus tempus. In quis varius orci, accumsan accumsan
+          enim. Proin ornare ut nisl non tempor. Quisque scelerisque aliquet
+          nunc id pellentesque. Nullam vitae dapibus urna.
+        </p>
+        <p><strong>Name Surname</strong></p>
+        <p class="signature"><em>Signature</em></p>
+      </section>
+
+      <hr />
+
+      <footer>
+        <!-- Footer with social links and copyright -->
+        <div>
+          <a href="#" target="_blank"
+            ><span class="icon iconify" data-icon="ri:github-fill"></span
+            >GitHub</a
+          >
+          <a href="#"
+            ><span class="icon iconify" data-icon="ri:linkedin-fill"></span
+            >LinkedIn</a
+          >
+          <a href="#" target="_blank"
+            ><span class="icon iconify" data-icon="ri:telegram-fill"></span
+            >Telegram</a
+          >
+          <a href="#"
+            ><span class="icon iconify" data-icon="ri:mail-fill"></span>Email</a
+          >
+        </div>
+        <div class="theme-toggle" onclick="toggleDarkMode()">
+          <!-- Theme toggle button for light/dark mode -->
+          <span class="iconify sun" data-icon="ri:sun-line"></span>
+          <span class="iconify moon" data-icon="ri:moon-line"></span>
+        </div>
+        <div>&copy; 2025 Name Surname</div>
+      </footer>
+    </div>
+
+    <!-- External JavaScript files -->
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  </body>
+</html>
